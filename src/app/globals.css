@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7ac74f;
+  --color-primary-dark: #61ac37;
+  --color-primary-light: #97d376;
+
+  --color-background: var(--color-zinc-100);
+  --color-border: #dfe0de;
+
+  --color-copy: #262725;
+  --color-copy-light: #656963;
+  --color-copy-lighter: #8b8f89;
+
+  --color-success: #4fc74f;
+  --color-warning: #c7c74f;
+  --color-error: #c74f4f;
+  --color-love: #e94959;
+}
+
+@layer components {
+  html {
+    @apply text-copy bg-background;
+  }
+
+  h1,
+  h2 {
+    @apply text-balance tracking-tighter;
+  }
+
+  h3,
+  h4 {
+    @apply text-balance tracking-tight;
+  }
+
+  p {
+    @apply text-pretty text-copy-light;
+  }
+
+  .input-focus,
+  button,
+  a {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-primary-light;
+  }
+
+  .link-focus {
+    @apply underline decoration-transparent outline-none hover:decoration-primary-dark focus-visible:decoration-primary-dark;
+  }
+}
