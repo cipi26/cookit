@@ -1,5 +1,5 @@
-import Footer from "@/features/navigation/Footer";
-import Navbar from "@/features/navigation/navbar/Navbar";
+import Footer from "@navigation/Footer";
+import Navbar from "@navigation/navbar/Navbar";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (

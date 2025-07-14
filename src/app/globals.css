@@ -4,7 +4,9 @@
   --color-primary: #7ac74f;
   --color-primary-dark: #61ac37;
   --color-primary-light: #97d376;
+  --color-primary-lighter: #addb91;
 
+  --color-card: var(--color-zinc-50);
   --color-background: var(--color-zinc-100);
   --color-border: #dfe0de;
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import HomeContainer from "@/features/Homepage/components/ui/HomeContainer";
+import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
 
         <Link
-          href="/auth/signin"
+          href="/auth/signup"
           role="button"
           className="rounded-full bg-primary-dark px-16 py-3 font-semibold text-slate-50 shadow-xl transition-transform ease-linear hover:scale-105 active:scale-95"
         >

@@ -46,7 +46,7 @@ const MobileNavLinks = ({
               whileHover={{ scale: 1.05 }}
               onClick={() => setIsOpen(false)}
             >
-              <LoginBtn pathname={pathname} className="inline-block w-full" />
+              <LoginBtn className="inline-block w-full" />
             </motion.p>
           </motion.nav>
         )}

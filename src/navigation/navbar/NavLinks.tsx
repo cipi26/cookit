@@ -16,7 +16,7 @@ const NavLinks = ({ pathname }: { pathname: string }) => {
           {link.name}
         </Link>
       ))}
-      <LoginBtn pathname={pathname} className="-ml-2" />
+      <LoginBtn className="-ml-2" />
     </nav>
   );
 };

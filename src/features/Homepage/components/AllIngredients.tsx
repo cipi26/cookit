@@ -1,16 +1,14 @@
-import HomeContainer from "@/features/Homepage/components/ui/HomeContainer";
-import { PumpkinSoup } from "@/features/Homepage/constants/recipes";
-import InfoBox from "@/features/Homepage/components/ui/InfoBox";
-import HomeRecipeCard from "@/features/Homepage/components/ui/HomeRecipeCard";
-import { HomeRecipeTypes } from "../types";
+import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
+import { PumpkinSoup } from "@/features/homepage/constants/recipes";
+import InfoBox from "@/features/homepage/components/ui/InfoBox";
+import HomeRecipeCard from "@/features/homepage/components/ui/HomeRecipeCard";
+import { HomeRecipeTypes } from "@/features/homepage/types";
 
 const AllIngredients = () => {
   return (
     <HomeContainer className="flex flex-col items-center justify-center gap-10 lg:flex-row">
       <div className="w-[min(37.5rem,_100%)]">
-        <h1 className="mb-3 text-4xl font-bold">
-          Cooking made easy.
-        </h1>
+        <h1 className="mb-3 text-4xl font-bold">Cooking made easy.</h1>
 
         <p>
           Get ready to cook up a storm right away with Yumy&apos;s comprehensive
@@ -27,7 +25,7 @@ const AllIngredients = () => {
 
 export default AllIngredients;
 
-const RecipeDetailsUI = ({ recipe }: {recipe: HomeRecipeTypes}) => {
+const RecipeDetailsUI = ({ recipe }: { recipe: HomeRecipeTypes }) => {
   const {
     recipe: { info },
   } = recipe;

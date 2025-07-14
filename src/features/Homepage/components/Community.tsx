@@ -1,7 +1,10 @@
-import { MerleRacoComment, BBQRibs } from "@/features/Homepage/constants/recipes";
-import HomeContainer from "@/features/Homepage/components/ui/HomeContainer";
-import HomeRecipeCard from "@/features/Homepage/components/ui/HomeRecipeCard";
-import HomeComment from "@/features/Homepage/components/ui/HomeComment";
+import {
+  MerleRacoComment,
+  BBQRibs,
+} from "@/features/homepage/constants/recipes";
+import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
+import HomeRecipeCard from "@/features/homepage/components/ui/HomeRecipeCard";
+import HomeComment from "@/features/homepage/components/ui/HomeComment";
 
 const Community = () => {
   return (
@@ -29,13 +32,9 @@ export default Community;
 const CommunityUI = () => {
   return (
     <article className="flex w-[min(32.5rem,_100%)] flex-col items-center justify-center rounded-[2rem] border-2 border-border bg-[#e9e9e9] p-4 shadow-md sm:p-5">
-      <HomeRecipeCard
-        recipe={BBQRibs}
-      />
+      <HomeRecipeCard recipe={BBQRibs} />
       <span className="block h-3 w-full" />
-      <HomeComment
-        comment={MerleRacoComment}
-      />
+      <HomeComment comment={MerleRacoComment} />
     </article>
   );
 };
