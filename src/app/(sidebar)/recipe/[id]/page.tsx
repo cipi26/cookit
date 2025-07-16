@@ -95,23 +95,24 @@ const PageContent = async ({ id }: { id: string }) => {
   );
 };
 
-export const InfoBlock = ({
+const InfoBlock = ({
   title,
   content,
 }: {
   title: string;
   content: string | string[];
-  }) => {
+}) => {
   return (
     <div className="max-w-[550px] space-y-5">
       <h2 className="text-4xl font-bold">{title}</h2>
       <div
         className={cn({
+          "whitespace-pre-line": typeof content === "string",
           "list-inside list-disc": typeof content === "object",
         })}
       >
         {typeof content === "string"
-          ? content.split("\n").map((instruction, id) => <p key={id}>{instruction}</p>)
+          ? content
           : typeof content === "object" &&
             content.map((data, id) => <li key={id}>{data}</li>)}
       </div>
