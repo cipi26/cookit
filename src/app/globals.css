@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss" source("../");
 
 @theme {
   --color-primary: #7ac74f;
@@ -23,6 +23,10 @@
 @layer components {
   html {
     @apply text-copy bg-background;
+  }
+
+  button {
+    @apply cursor-pointer
   }
 
   h1,

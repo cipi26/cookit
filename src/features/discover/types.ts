@@ -9,6 +9,14 @@ export type FeedRecipeTypes = {
 }
 
 export type RecipeTypes = FeedRecipeTypes & {
+  description: string,
+  tags: string[],
+  info: {
+    cookTime: string,
+    servings: number,
+    difficulty: number,
+    caloriesPerServing: string
+  },
   ingredients: string[],
   instructions: string
 }

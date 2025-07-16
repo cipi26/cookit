@@ -5,7 +5,7 @@ import Image from "next/image";
 type PillTypes = {
   content: string,
   image?: string,
-  responsive: boolean,
+  responsive?: boolean,
   containerStyle?: ClassValue,
   contentStyle?: ClassValue
 }
