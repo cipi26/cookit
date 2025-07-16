@@ -13,7 +13,7 @@ const ShareRecipes = () => {
         </h1>
 
         <p className="">
-          With Yumy, sharing your favorite recipes with friends and family has
+          With Cookit, sharing your favorite recipes with friends and family has
           never been easier. Simply click a button to share your culinary
           creations directly on our platform. Strengthen bonds over shared meals
           and create unforgettable dining experiences together.

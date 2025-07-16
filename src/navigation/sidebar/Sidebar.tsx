@@ -23,7 +23,7 @@ const Sidebar = () => {
       )}
     >
       <div className="flex items-center justify-between">
-        <h2 className="ml-6 text-4xl font-bold text-primary">Yumy</h2>
+        <h2 className="ml-6 text-4xl font-bold text-primary">Cookit</h2>
         <button
           onClick={() => setOpen && setOpen(false)}
           className="input-focus mt-1 inline-block rounded-full p-1 transition-colors hover:bg-border lg:hidden"

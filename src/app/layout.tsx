@@ -10,16 +10,16 @@ const be_vietnam_pro = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   title: {
-    default: "Yumy",
-    template: "%s | Yumy",
+    default: "Cookit",
+    template: "%s | Cookit",
   },
   description:
-    "Connect, Share, and Explore Delicious Recipes with Yumy - The Ultimate Social Media Platform for Food Enthusiasts!",
+    "Connect, Share, and Explore Delicious Recipes with Cookit - The Ultimate Social Media Platform for Food Enthusiasts!",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#27272a"
-}
+  themeColor: "#27272a",
+};
 
 export default function RootLayout({
   children,

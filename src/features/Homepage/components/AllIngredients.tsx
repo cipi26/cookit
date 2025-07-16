@@ -11,10 +11,11 @@ const AllIngredients = () => {
         <h1 className="mb-3 text-4xl font-bold">Cooking made easy.</h1>
 
         <p>
-          Get ready to cook up a storm right away with Yumy&apos;s comprehensive
-          recipe listings. From detailed ingredient lists and quantities to
-          preparation times and step-by-step instructions, we provide all the
-          information you need to whip up delicious meals in no time.
+          Get ready to cook up a storm right away with Cookit&apos;s
+          comprehensive recipe listings. From detailed ingredient lists and
+          quantities to preparation times and step-by-step instructions, we
+          provide all the information you need to whip up delicious meals in no
+          time.
         </p>
       </div>
 

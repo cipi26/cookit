@@ -11,8 +11,8 @@ const Hero = () => {
         </h1>
 
         <p className="mb-8 w-9/12">
-          Connect, Share, and Explore Delicious Recipes with Yumy - The Ultimate
-          Social Media Platform for Food Enthusiasts!
+          Connect, Share, and Explore Delicious Recipes with Cookit - The
+          Ultimate Social Media Platform for Food Enthusiasts!
         </p>
 
         <Link

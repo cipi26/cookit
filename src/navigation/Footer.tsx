@@ -6,7 +6,7 @@ const Footer = () => {
       <Cipi />
 
       <h5 className="flex-1 text-center text-sm text-copy-light">
-        © 2024 Yumy. All rights reserved.
+        © 2024 Cookit. All rights reserved.
       </h5>
     </footer>
   );
