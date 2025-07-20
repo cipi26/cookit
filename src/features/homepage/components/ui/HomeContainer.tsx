@@ -1,4 +1,4 @@
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwindFormatting";
 import { ClassValue } from "clsx";
 
 const HomeContainer = ({

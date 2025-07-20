@@ -1,5 +1,5 @@
-import BackButton from "@auth/signout/components/BackButton";
-import { signOut } from "@auth/signout/actions/signOut";
+import BackButton from "@/features/auth/signout/ui/BackButton";
+import { signOut } from "@/features/auth/signout/actions";
 
 export const metadata = {
   title: "Sign out",

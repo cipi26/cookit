@@ -1,4 +1,4 @@
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwindFormatting";
 import Search from "@/ui/Search";
 import AccountPill from "@/ui/AccountPill";
 import { ClassValue } from "clsx";
@@ -19,7 +19,7 @@ const Page = ({ search = true, className, ...props }: PageTypes) => {
           </Search>
         )}
 
-        <div className={cn(className)} {...props}/>
+        <div className={cn(className)} {...props} />
       </div>
     </main>
   );

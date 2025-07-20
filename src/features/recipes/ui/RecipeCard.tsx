@@ -1,11 +1,17 @@
-import { formatNumber } from "@/helpers/formatNumber";
+import { formatNumber } from "@/utils/formatNumber";
 import { Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FeedRecipeTypes } from "../../types";
+import { FeedRecipeTypes } from "../types";
 
 const RecipeCard = async ({ recipe }: { recipe: FeedRecipeTypes }) => {
-  const { id, name, image, likes, users: { full_name } } = recipe;
+  const {
+    id,
+    name,
+    image,
+    likes,
+    users: { full_name },
+  } = recipe;
 
   return (
     <Link

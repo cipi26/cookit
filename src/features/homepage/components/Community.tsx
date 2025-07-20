@@ -1,10 +1,7 @@
-import {
-  MerleRacoComment,
-  BBQRibs,
-} from "@/features/homepage/constants/recipes";
-import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
-import HomeRecipeCard from "@/features/homepage/components/ui/HomeRecipeCard";
-import HomeComment from "@/features/homepage/components/ui/HomeComment";
+import { MerleRacoComment, BBQRibs } from "@homepage/data/recipes";
+import HomeContainer from "@homepage/components/ui/HomeContainer";
+import HomeRecipeCard from "@homepage/components/ui/HomeRecipeCard";
+import HomeComment from "@homepage/components/ui/HomeComment";
 
 const Community = () => {
   return (

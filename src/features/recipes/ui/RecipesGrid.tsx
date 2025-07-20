@@ -1,7 +1,6 @@
-import RecipeCard from "./ui/RecipeCard";
-// import { ArrowRightIcon } from "@heroicons/react/20/solid";
+import RecipeCard from "@recipes/ui/RecipeCard";
 import Link from "next/link";
-import { getRecipes } from "@/features/discover/actions/getRecipes";
+import { getRecipes } from "@recipes/actions/getRecipes";
 
 const RecipesGrid = async () => {
   const recipes = await getRecipes();
@@ -14,10 +13,7 @@ const RecipesGrid = async () => {
         className="link-focus group mb-3 mt-1 flex w-fit items-center gap-1 p-1 !ring-0 transition-all"
       >
         {areRecipes && (
-          <>
-            <h2 className="mr-1 inline text-3xl font-bold">Popular Recipes</h2>
-            {/* <ArrowRightIcon className="mt-1 w-5 transition-transform ease-linear group-hover:translate-x-1 group-focus-visible:translate-x-1" /> */}
-          </>
+            <h2 className="mr-1 inline text-3xl font-bold">All Recipes</h2>
         )}
       </Link>
       {!areRecipes && (

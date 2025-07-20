@@ -1,8 +1,8 @@
-import Hero from "@/features/homepage/components/Hero";
-import Community from "@/features/homepage/components/Community";
-import Stats from "@/features/homepage/components/Stats";
-import AllIngredients from "@/features/homepage/components/AllIngredients";
-import ShareRecipes from "@/features/homepage/components/ShareRecipes";
+import Hero from "@homepage/components/Hero";
+import Community from "@homepage/components/Community";
+import Stats from "@homepage/components/Stats";
+import AllIngredients from "@homepage/components/AllIngredients";
+import ShareRecipes from "@homepage/components/ShareRecipes";
 
 export default function Home() {
   return (

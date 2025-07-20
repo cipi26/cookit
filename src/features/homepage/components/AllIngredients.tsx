@@ -1,8 +1,8 @@
-import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
-import { PumpkinSoup } from "@/features/homepage/constants/recipes";
-import InfoBox from "@/features/homepage/components/ui/InfoBox";
-import HomeRecipeCard from "@/features/homepage/components/ui/HomeRecipeCard";
-import { HomeRecipeTypes } from "@/features/homepage/types";
+import HomeContainer from "@homepage/components/ui/HomeContainer";
+import { PumpkinSoup } from "@homepage/data/recipes";
+import InfoBox from "@homepage/components/ui/InfoBox";
+import HomeRecipeCard from "@homepage/components/ui/HomeRecipeCard";
+import { HomeRecipeTypes } from "@homepage/types";
 
 const AllIngredients = () => {
   return (

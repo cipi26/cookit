@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useContext } from "react";
 import { SidebarStatus } from "@navigation/sidebar/SidebarStatusProvider";
 import { ArrowLeft } from "lucide-react";
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwindFormatting";
 import { usePathname } from "next/navigation";
-import { SidebarLinks } from "../constants";
+import { SidebarLinks } from "../data";
 
 const Sidebar = () => {
   const pathname = usePathname();

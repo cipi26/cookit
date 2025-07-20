@@ -21,7 +21,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@auth/*": ["./src/features/auth/*"],
-      "@navigation/*": ["./src/navigation/*"],
+      "@homepage/*": ["./src/features/homepage/*"],
+      "@recipes/*": ["./src/features/recipes/*"],
+      "@navigation/*": ["./src/features/navigation/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

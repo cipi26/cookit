@@ -1,4 +1,4 @@
-import { signUp } from "@auth/signup/actions/signUp";
+import AuthForm from "@/features/auth/ui/AuthForm";
 
 export const metadata = {
   title: "Create a Cookit Account | Join the Recipe Community",
@@ -23,40 +23,7 @@ const page = () => {
             </p>
           </div>
 
-          <form className="flex flex-col space-y-4" action={signUp}>
-            <div className="space-y-2">
-              <input
-                type="text"
-                placeholder="Username"
-                name="username"
-                className="flex w-full items-center gap-5 rounded-2xl border-[1px] border-border px-5 py-3 font-medium text-copy-light shadow-sm transition-all"
-              />
-              <input
-                type="text"
-                placeholder="Full name"
-                name="full_name"
-                className="flex w-full items-center gap-5 rounded-2xl border-[1px] border-border px-5 py-3 font-medium text-copy-light shadow-sm transition-all"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                className="flex w-full items-center gap-5 rounded-2xl border-[1px] border-border px-5 py-3 font-medium text-copy-light shadow-sm transition-all"
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                name="password"
-                className="flex w-full items-center gap-5 rounded-2xl border-[1px] border-border px-5 py-3 font-medium text-copy-light shadow-sm transition-all"
-              />
-            </div>
-            <button
-              type="submit"
-              className="flex items-center justify-center w-fit mx-auto bg-primary hover:bg-primary-dark cursor-pointer gap-5 rounded-2xl px-8 py-3 font-medium text-slate-50 shadow transition-all ease-linear will-change-transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Sign Up
-            </button>
-          </form>
+          <AuthForm type="signup" />
 
           <p className="text-center text-sm text-copy-lighter">
             By signing up, you agree to Cookit’s Terms of Service and Privacy

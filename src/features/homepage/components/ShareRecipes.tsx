@@ -1,6 +1,6 @@
-import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
-import HomeRecipeCard from "@/features/homepage/components/ui/HomeRecipeCard";
-import { BananaPancakes } from "@/features/homepage/constants/recipes";
+import HomeContainer from "@homepage/components/ui/HomeContainer";
+import HomeRecipeCard from "@homepage/components/ui/HomeRecipeCard";
+import { BananaPancakes } from "@homepage/data/recipes";
 
 import { ArrowUp, ChevronLeft } from "lucide-react";
 

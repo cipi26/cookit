@@ -1,4 +1,4 @@
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwindFormatting";
 import Image from "next/image";
 
 const InfoBox = ({

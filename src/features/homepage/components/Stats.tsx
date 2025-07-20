@@ -1,4 +1,4 @@
-import HomeContainer from "@/features/homepage/components/ui/HomeContainer";
+import HomeContainer from "@homepage/components/ui/HomeContainer";
 
 const Stats = () => {
   return (

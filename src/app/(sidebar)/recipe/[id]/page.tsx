@@ -1,10 +1,10 @@
-import InfoBox from "@/features/recipe_page/ui/InfoBox";
-import LikeAndSend from "@/features/recipe_page/ui/LikeAndSend";
+import InfoBox from "@/features/recipes/ui/InfoBox";
+import LikeAndSend from "@/features/recipes/ui/LikeAndSend";
 import Page from "@/ui/Page";
 import Pill from "@/ui/Pill";
 // import { getRecipes } from "@/features/discover/actions/getRecipes";
-import { getRecipeById } from "@/features/discover/actions/getRecipeById";
-import { cn } from "@/utils/utils";
+import { getRecipeById } from "@recipes/actions/getRecipeById";
+import { cn } from "@/utils/tailwindFormatting";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -70,7 +70,12 @@ const PageContent = async ({ id }: { id: string }) => {
             <h1 className="line-clamp-2 py-1 text-5xl font-black">{name}</h1>
             <div className="flex gap-2 flex-wrap">
               {tags.map((tag, id) => (
-                <span key={id} className="bg-primary-lighter border border-primary-dark px-2 rounded-full text-sm">{tag}</span>
+                <span
+                  key={id}
+                  className="bg-primary-lighter border border-primary-dark px-2 rounded-full text-sm"
+                >
+                  {tag}
+                </span>
               ))}
             </div>
           </div>

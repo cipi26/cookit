@@ -1,6 +1,6 @@
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwindFormatting";
 import Image from "next/image";
-import { HomeRecipeTypes } from "@/features/homepage/types";
+import { HomeRecipeTypes } from "@homepage/types";
 import { Heart } from "lucide-react";
 
 type HomeRecipeCardTypes = {

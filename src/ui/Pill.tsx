@@ -1,16 +1,22 @@
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwindFormatting";
 import { ClassValue } from "clsx";
 import Image from "next/image";
 
 type PillTypes = {
-  content: string,
-  image?: string,
-  responsive?: boolean,
-  containerStyle?: ClassValue,
-  contentStyle?: ClassValue
-}
+  content: string;
+  image?: string;
+  responsive?: boolean;
+  containerStyle?: ClassValue;
+  contentStyle?: ClassValue;
+};
 
-const Pill = ({ content, image, responsive, containerStyle, contentStyle }: PillTypes) => {
+const Pill = ({
+  content,
+  image,
+  responsive,
+  containerStyle,
+  contentStyle,
+}: PillTypes) => {
   return (
     <div
       className={cn(
@@ -19,13 +25,17 @@ const Pill = ({ content, image, responsive, containerStyle, contentStyle }: Pill
         {
           "md:bg-card": responsive,
           "bg-card": !responsive,
-        },
+        }
       )}
     >
       <p
-        className={cn("line-clamp-2 font-medium", {
-          "hidden md:line-clamp-1": responsive,
-        }, contentStyle)}
+        className={cn(
+          "line-clamp-2 font-medium",
+          {
+            "hidden md:line-clamp-1": responsive,
+          },
+          contentStyle
+        )}
       >
         {content}
       </p>

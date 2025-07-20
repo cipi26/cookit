@@ -1,4 +1,4 @@
-import RecipesGrid from "@/features/discover/components/RecipesGrid";
+import RecipesGrid from "@/features/recipes/ui/RecipesGrid";
 // import { Suspense } from "react";
 // import Loading from "@/app/components/ui/Loading";
 import Page from "@/ui/Page";
