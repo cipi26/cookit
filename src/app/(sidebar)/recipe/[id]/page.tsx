@@ -46,7 +46,7 @@ const PageContent = async ({ id }: { id: string }) => {
     description,
     image,
     likes,
-    users: { full_name },
+    users: { full_name, avatar },
     info,
     tags,
     ingredients,
@@ -81,7 +81,7 @@ const PageContent = async ({ id }: { id: string }) => {
           </div>
           <p className="max-w-[37.5rem]">{description}</p>
           <div className="flex flex-wrap items-center gap-4">
-            <Pill content={full_name} image={undefined} />
+            <Pill content={full_name} image={avatar} />
             <LikeAndSend likes={likes} />
           </div>
           <div className="grid max-w-[490px] grid-cols-[repeat(auto-fit,107px)] flex-wrap justify-center gap-5 sm:justify-between sm:gap-3">

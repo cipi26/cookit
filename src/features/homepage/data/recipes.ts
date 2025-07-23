@@ -3,7 +3,7 @@ import { HomeCommentTypes, HomeRecipeTypes } from "../types";
 export const PumpkinSoup: HomeRecipeTypes = {
   name: "Pumpkin Soup",
   likes: "6.7M",
-  image: "https://i.imgur.com/ALw36ui.jpg",
+  image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/recipes/94b21388-f8c2-43bb-a1d5-9e2a59ba42d9.jpg",
   recipe: {
     info: {
       cookTime: "35 mins",
@@ -28,14 +28,14 @@ export const PumpkinSoup: HomeRecipeTypes = {
   },
   user: {
     name: "Aurelia Baiza",
-    image: "https://i.imgur.com/TsL631p.jpg",
+    image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/avatars/aisha_mohammed.jpg",
   },
 };
 
 export const BBQRibs: HomeRecipeTypes = {
   name: "BBQ Ribs",
   likes: "9.0M",
-  image: "https://i.imgur.com/sij0uqO.jpg",
+  image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/recipes/36624421-12a2-40ad-a3c6-d818adc98fb5.jpg",
   recipe: {
     info: {
       cookTime: "2 hours",
@@ -59,14 +59,14 @@ export const BBQRibs: HomeRecipeTypes = {
   },
   user: {
     name: "Stacee Wieberdink",
-    image: "https://i.imgur.com/a49gBfv.jpg",
+    image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/avatars/elena_petrova.jpg",
   },
 };
 
 export const BananaPancakes: HomeRecipeTypes = {
   name: "Banana Pancakes",
   likes: "8.0M",
-  image: "https://i.imgur.com/vlrTwBm.jpg",
+  image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/recipes/3bc42820-20e0-447d-a762-9d1aa42b3fe1.jpg",
   recipe: {
     info: {
       cookTime: "20 mins",
@@ -94,7 +94,7 @@ export const BananaPancakes: HomeRecipeTypes = {
   },
   user: {
     name: "Karima Ansaldo",
-    image: "https://i.imgur.com/KqfJJqw.jpg",
+    image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/avatars/nora_jensen.jpg",
   },
 };
 
@@ -102,7 +102,7 @@ export const MerleRacoComment: HomeCommentTypes = {
   name: "Merle Raco",
   content:
     "Wow, this recipe looks absolutely mouthwatering! The combination of flavors and ingredients has me drooling already. Can't wait to give it a try!",
-  image: "https://i.imgur.com/wN2eOLX.jpg",
+  image: "https://iuvxxguustzadtalgqyr.supabase.co/storage/v1/object/public/images/avatars/carlosr.jpg",
   liked: true,
   likes: "23k",
   time: "2h",

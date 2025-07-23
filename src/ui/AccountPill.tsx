@@ -12,7 +12,7 @@ const AccountPill = async () => {
   if (!session) return null;
 
   return (
-    <Pill content={session.user.user_metadata.full_name} image={undefined} responsive={true}/>
+    <Pill content={session.user.user_metadata.full_name} image={session.user.user_metadata.avatar} responsive={true}/>
   );
 };
 export default AccountPill;

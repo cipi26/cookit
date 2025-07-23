@@ -4,7 +4,8 @@ export type FeedRecipeTypes = {
   image: string,
   likes: number,
   users: {
-    full_name: string
+    full_name: string,
+    avatar: string
   }
 }
 

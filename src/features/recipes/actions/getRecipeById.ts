@@ -18,7 +18,8 @@ export const getRecipeById = async (
     description,
     likes,
     users (
-      full_name
+      full_name,
+      avatar
     ),
     info,
     tags,
