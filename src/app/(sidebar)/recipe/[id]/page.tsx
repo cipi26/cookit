@@ -64,7 +64,6 @@ const PageContent = async ({ id }: { id: string }) => {
           priority={true}
           className="h-[20rem] w-auto max-w-[35rem] flex-1 shrink basis-[21.5rem] rounded-3xl object-cover object-center shadow-md xl:max-w-[28.125rem]"
         />
-
         <div className="max-w-[700px] flex-1 space-y-5 sm:space-y-4">
           <div className="flex flex-col items-start justify-between gap-4">
             <h1 className="line-clamp-2 py-1 text-5xl font-black">{name}</h1>
@@ -91,11 +90,11 @@ const PageContent = async ({ id }: { id: string }) => {
             <InfoBox type="servings" value={info.servings} />
           </div>
         </div>
+        <div className="space-y-8">
+          <InfoBlock title="Ingredients" content={ingredients} />
+          <InfoBlock title="Instructions" content={instructions} />
+        </div>
       </article>
-      <div className="space-y-8">
-        <InfoBlock title="Ingredients" content={ingredients} />
-        <InfoBlock title="Instructions" content={instructions} />
-      </div>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { UserCircle2, Globe2, Send, Settings, LogOut, LucideProps } from "lucide-react";
+import { Globe2, Send, Settings, LogOut, LucideProps } from "lucide-react";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 type SidebarLinkTypes = {
@@ -8,11 +8,6 @@ type SidebarLinkTypes = {
 }
 
 export const SidebarLinks: SidebarLinkTypes[] = [
-  {
-    name: "Profile",
-    path: "#",
-    icon: UserCircle2,
-  },
   {
     name: "Discover",
     path: "/discover",

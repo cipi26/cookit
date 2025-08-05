@@ -7,7 +7,7 @@ const RecipesGrid = async () => {
   const areRecipes = recipes.length !== 0;
 
   return (
-    <article className="">
+    <section className="">
       <Link
         href="#"
         className="link-focus group mb-3 mt-1 flex w-fit items-center gap-1 p-1 !ring-0 transition-all"
@@ -26,7 +26,7 @@ const RecipesGrid = async () => {
           <RecipeCard recipe={recipe} key={idx} />
         ))}
       </div>
-    </article>
+    </section>
   );
 };
 export default RecipesGrid;

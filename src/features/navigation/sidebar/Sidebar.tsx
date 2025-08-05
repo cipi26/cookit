@@ -1,16 +1,37 @@
 "use client";
 import Link from "next/link";
 
-import { useContext } from "react";
+import {
+  Dispatch,
+  ForwardRefExoticComponent,
+  RefAttributes,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { SidebarStatus } from "@navigation/sidebar/SidebarStatusProvider";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, LucideProps, UserCircle2 } from "lucide-react";
 import { cn } from "@/utils/tailwindFormatting";
 import { usePathname } from "next/navigation";
 import { SidebarLinks } from "../data";
+import { createClient } from "@/utils/supabase/client";
 
 const Sidebar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useContext(SidebarStatus);
+  const [username, setUsername] = useState("");
+
+  const supabase = createClient();
+  // @ts-expect-error remove supabase warning about using getSession() from the console
+  supabase.auth.suppressGetSessionWarning = true;
+
+  useEffect(() => {
+    const data = supabase.auth.getSession();
+    data.then((value) =>
+      setUsername(value.data.session?.user.user_metadata.username)
+    );
+  }, [supabase.auth]);
 
   return (
     <aside
@@ -32,36 +53,71 @@ const Sidebar = () => {
         </button>
       </div>
       <nav className="flex flex-col gap-4 text-copy-light tracking-tight">
+        <SidebarLink
+          name="Profile"
+          pathname={pathname}
+          path={`/user/${username}`}
+          Icon={UserCircle2}
+          setOpen={setOpen}
+        />
         {SidebarLinks.map((link, idx) => (
-          <Link
-            onClick={() => setOpen && setOpen(false)}
-            href={link.path}
+          <SidebarLink
             key={idx}
-            className={cn(
-              `group flex items-center gap-2 rounded-full px-3 py-2 outline-none transition-all hover:bg-background hover:font-semibold hover:text-copy focus:bg-background focus:font-semibold focus-visible:text-copy`,
-              {
-                "bg-background font-semibold text-copy border border-border":
-                  pathname === link.path,
-                "text-error hover:text-error focus-visible:text-error":
-                  link.name === "Sign out",
-              }
-            )}
-          >
-            <div
-              className={cn(
-                "w-6 transition-transform group-hover:scale-110 group-focus-visible:scale-110",
-                {
-                  "scale-110": pathname === link.path,
-                }
-              )}
-            >
-              <link.icon className="size-6" />
-            </div>
-            {link.name}
-          </Link>
+            name={link.name}
+            pathname={pathname}
+            path={link.path}
+            Icon={link.icon}
+            setOpen={setOpen}
+          />
         ))}
       </nav>
     </aside>
   );
 };
 export default Sidebar;
+
+type SidebarLinkType = {
+  Icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
+  setOpen?: Dispatch<SetStateAction<boolean>> | null;
+  path: string;
+  pathname?: string;
+  name: string;
+};
+
+const SidebarLink = ({
+  setOpen,
+  path,
+  pathname,
+  name,
+  Icon,
+}: SidebarLinkType) => {
+  return (
+    <Link
+      onClick={() => setOpen && setOpen(false)}
+      href={path}
+      className={cn(
+        `group flex items-center gap-2 rounded-full px-3 py-2 outline-none transition-all hover:bg-background hover:font-semibold hover:text-copy focus:bg-background focus:font-semibold focus-visible:text-copy`,
+        {
+          "bg-background font-semibold text-copy border border-border":
+            pathname === path,
+          "text-error hover:text-error focus-visible:text-error":
+            name === "Sign out",
+        }
+      )}
+    >
+      <div
+        className={cn(
+          "w-6 transition-transform group-hover:scale-110 group-focus-visible:scale-110",
+          {
+            "scale-110": pathname === path,
+          }
+        )}
+      >
+        <Icon className="size-6" />
+      </div>
+      {name}
+    </Link>
+  );
+};
